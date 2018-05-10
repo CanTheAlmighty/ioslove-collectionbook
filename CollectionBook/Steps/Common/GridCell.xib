@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="8I5-p4-jPl" customClass="GridCell" customModule="CollectionBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkS-Z4-d0d">
+                        <rect key="frame" x="16" y="0.0" width="64" height="96"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vkS-Z4-d0d" firstAttribute="top" secondItem="8I5-p4-jPl" secondAttribute="topMargin" id="Jpe-gq-C0R"/>
+                <constraint firstItem="vkS-Z4-d0d" firstAttribute="leading" secondItem="8I5-p4-jPl" secondAttribute="leadingMargin" id="WUB-rc-z2o"/>
+                <constraint firstAttribute="trailingMargin" secondItem="vkS-Z4-d0d" secondAttribute="trailing" id="aGW-yW-16L"/>
+                <constraint firstAttribute="bottomMargin" secondItem="vkS-Z4-d0d" secondAttribute="bottom" id="yci-xS-o7p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Iix-Qy-NNp"/>
+            <size key="customSize" width="96" height="96"/>
+            <connections>
+                <outlet property="label" destination="vkS-Z4-d0d" id="7dn-Rg-rfb"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="68"/>
+        </collectionViewCell>
+    </objects>
+</document>

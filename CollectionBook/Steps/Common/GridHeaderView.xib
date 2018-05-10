@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" reuseIdentifier="header" id="ean-9t-z5j" customClass="GridHeaderView" customModule="CollectionBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXj-J8-uGs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p9p-Eo-8VJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" preservesSuperviewLayoutMargins="YES" text="Section Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkI-wg-7Ip">
+                                <rect key="frame" x="8" y="4" width="359" height="26.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oat-ld-59Q">
+                                <rect key="frame" x="8" y="30.5" width="359" height="22.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EkI-wg-7Ip" firstAttribute="leading" secondItem="p9p-Eo-8VJ" secondAttribute="leading" constant="8" id="ANe-f5-3KO"/>
+                            <constraint firstItem="oat-ld-59Q" firstAttribute="top" secondItem="EkI-wg-7Ip" secondAttribute="bottom" id="CUX-Rz-NND"/>
+                            <constraint firstAttribute="trailing" secondItem="EkI-wg-7Ip" secondAttribute="trailing" constant="8" id="GWB-Ah-SUd"/>
+                            <constraint firstItem="oat-ld-59Q" firstAttribute="leading" secondItem="p9p-Eo-8VJ" secondAttribute="leading" constant="8" id="b05-ik-8lq"/>
+                            <constraint firstItem="EkI-wg-7Ip" firstAttribute="top" secondItem="p9p-Eo-8VJ" secondAttribute="top" constant="4" id="j7K-MN-R5n"/>
+                            <constraint firstAttribute="trailing" secondItem="oat-ld-59Q" secondAttribute="trailing" constant="8" id="luS-Wm-6kx"/>
+                            <constraint firstAttribute="bottom" secondItem="oat-ld-59Q" secondAttribute="bottom" constant="4" id="xF4-2M-4Sx"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="snl-1c-3Tt" firstAttribute="trailing" secondItem="nXj-J8-uGs" secondAttribute="trailing" id="3My-c5-Ryw"/>
+                <constraint firstItem="nXj-J8-uGs" firstAttribute="leading" secondItem="snl-1c-3Tt" secondAttribute="leading" id="4IH-vM-4Zp"/>
+                <constraint firstAttribute="bottom" secondItem="nXj-J8-uGs" secondAttribute="bottom" id="Oqi-6C-Gzd"/>
+                <constraint firstItem="nXj-J8-uGs" firstAttribute="top" secondItem="ean-9t-z5j" secondAttribute="top" id="bdS-Xa-4qw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="snl-1c-3Tt"/>
+            <connections>
+                <outlet property="labelSubtitle" destination="oat-ld-59Q" id="rWC-s5-F1d"/>
+                <outlet property="labelTitle" destination="EkI-wg-7Ip" id="JkQ-i9-BCB"/>
+            </connections>
+            <point key="canvasLocation" x="-83.5" y="-34.5"/>
+        </collectionReusableView>
+    </objects>
+</document>
